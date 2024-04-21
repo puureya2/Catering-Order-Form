@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+	<html>
+
+		<head>
+			<link rel="stylesheet" href="mystyle.css">
+			</head>
+
+		<body>	
+	
+			<form action="submit.php" method="post">
+
+				<h1>Enquire Now! Request FREE Quote</h1>
+
+				<h2>Event Details</h2>
+				<label for="occasion">Occasion:</label>
+				<input type="text" id="occasion" name="occasion" required><br>
+
+				<label for="date">Event Date:</label>
+				<input type="date" id="date" name="event_date" required><br>
+
+				<label for="time">Event Time:</label>
+				<input type="time" id="time" name="event_time" required><br>
+
+				<label for="budgetPerPax">Budget/Pax (RM):</label>
+				<input type="number" id="budgetPerPax" name="budgetPerPax" required><br>
+
+				<h4>Total Budget: RM3000</h4><br>
+
+				<label for="no_of_guests">Number of Pax:</label>
+				<input type="number" id="no_of_guests" name="no_of_guests" min="1" required><br>
+
+				<label for="eventAddress">Event Address:</label>
+				<input type="text" id="eventAddress" name="eventAddress" required><br>
+
+				<label for="location">Location:</label>
+				<select id="location" name="location" required>
+					<option value="Kuala Lumpur">Kuala Lumpur</option>
+					<option value="Selangor">Selangor</option>
+				</select><br>
+
+				<h2>Contact Details</h2>
+
+				<label for="contactName">Contact Name:</label>
+				<input type="text" id="contactName" name="contactName" required><br>
+
+				<label for="contactNumber">Contact Number:</label>
+				<input type="tel" id="contactNumber" name="contactNumber" required><br>
+
+				<label for="contactEmail">Contact Email:</label>
+				<input type="email" id="contactEmail" name="contactEmail" required><br>
+
+				<label for="companyName">Company Name:</label>
+				<input type="text" id="companyName" name="companyName"><br>
+
+				<h2>Other Details</h2>
+
+				<label for="specialRequest">Special Request:</label>
+				<textarea id="specialRequest" name="specialRequest"></textarea><br>
+
+				<label for="promoCode">Promo Code:</label>
+				<input type="text" id="promoCode" name="promoCode"><br>
+
+				<label for="newsletter">News Letter:</label>
+				<input type="checkbox" id="newsletter" name="newsletter" value="yes" checked><br>
+
+				<input type="submit" value="Submit">
+				
+			</form>
+		</body>
+	</html>	
